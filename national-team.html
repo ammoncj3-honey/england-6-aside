@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Team Hub | England 6-a-side</title>
+    <style>
+        :root {
+            --england-red: #ce1124;
+            --england-blue: #002043;
+            --light-grey: #f4f4f4;
+            --white: #ffffff;
+            --gold: #d4af37;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; background: var(--light-grey); line-height: 1.6; }
+
+        /* Navigation */
+        nav {
+    background: var(--england-blue);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo { 
+    color: white; 
+    font-weight: 800; 
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li { margin-left: 2rem; }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover { color: var(--england-red); }
+
+        /* Header Section */
+        .page-header {
+            background: linear-gradient(rgba(0,32,67,0.9), rgba(0,32,67,0.9)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-bottom: 4px solid var(--england-red);
+        }
+
+        /* Main Content Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Fixtures Styling */
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        .card h2 { color: var(--england-blue); border-bottom: 2px solid var(--england-red); display: inline-block; margin-bottom: 20px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th { text-align: left; font-size: 0.8rem; color: #888; text-transform: uppercase; padding-bottom: 10px; }
+        td { padding: 15px 0; border-bottom: 1px solid #eee; font-weight: 500; }
+        .vs { color: var(--england-red); font-weight: bold; padding: 0 10px; }
+        .status { font-size: 0.75rem; background: #e0e0e0; padding: 3px 8px; border-radius: 3px; }
+
+        /* Info Sidebar */
+        .highlight-box { background: var(--england-blue); color: white; padding: 20px; border-radius: 8px; }
+        .highlight-box h3 { color: var(--gold); margin-top: 0; }
+        .stat-row { display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; }
+
+        /* News List */
+        .news-item { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .news-item small { color: var(--england-red); font-weight: bold; }
+        .news-item p { margin: 5px 0 0 0; font-size: 0.95rem; font-weight: bold; }
+
+        @media (max-width: 768px) { .grid-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div style="color:white; font-weight:900;"><img src="images/England-6-a-side.png" alt="England 6-a-side" style="height: 50px;"></div>
+    <div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="national-team.html">National Team</a></li>
+        <li><a href="trials.html">Apply for Trials</a></li>
+        <li><a href="https://www.instagram.com/official.england6aside/">Instagram</a></li>
+        
+    </ul>
+</nav>
+
+<header class="page-header">
+    <h1>National Team Hub</h1>
+    <p>Official Information, Schedules, and Squad News</p>
+</header>
+
+<div class="grid-container">
+    
+    <section>
+        <div class="card">
+            <h2>Upcoming Fixtures</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Competition</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>England <span class="vs">vs</span> Wales</td>
+                        <td>International Friendly</td>
+                        <td>Mar 29, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>England <span class="vs">vs</span> Ireland</td>
+                        <td>International Friendly</td>
+                        <td>Apr 19, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>England <span class="vs">vs</span> TBC</td>
+                        <td>International Friendly</td>
+                        <td>May 02, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>About the National Setup</h2>
+            <p>The England 6-a-side national team represents the pinnacle of small-sided football. Managed by the ISF, the squad is selected from the best players across the country's elite leagues.</p>
+            <p>Our mission is to bring the World Cup home in 2026 through technical excellence, high-intensity pressing, and the unique spirit of English football.</p>
+        </div>
+    </section>
+
+    <aside>
+        <div class="highlight-box">
+            <h3>Team Record 2025/26</h3>
+            <div class="stat-row"><span>Played:</span> <span>7</span></div>
+            <div class="stat-row"><span>Won:</span> <span>3</span></div>
+            <div class="stat-row"><span>Drawn:</span> <span>1</span></div>
+            <div class="stat-row"><span>Lost:</span> <span>3</span></div>
+            <p style="font-size: 0.8rem; margin-top: 15px; text-align: center;">Current World Ranking: <strong>#27</strong></p>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <h3>Latest Updates</h3>
+            <div class="news-item">
+                <small>ANNOUNCEMENT</small>
+                <p>New Training Kit Partnership revealed for the 2026 season.</p>
+            </div>
+            <div class="news-item">
+                <small>SQUAD NEWS</small>
+                <p>New captain to be announced ahead of Wales clash.</p>
+            </div>
+            <div class="news-item">
+                <small>COMMUNITY</small>
+                <p>Scouts to attend regional finals in Birmingham this weekend.</p>
+            </div>
+        </div>
+    </aside>
+
+</div>
+
+</body>
+</html>

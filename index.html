@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>England 6-a-side | Official Home</title>
+    <style>
+        :root {
+            --england-red: #ce1124;
+            --england-blue: #002043;
+            --light-grey: #f4f4f4;
+            --white: #ffffff;
+            --dark-text: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--light-grey);
+            margin: 0;
+            color: var(--dark-text);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: var(--england-blue);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo { color: white; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+
+        /* Hero News Section */
+        .hero {
+            background: linear-gradient(rgba(0,32,67,0.8), rgba(0,32,67,0.8)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Temporary Background */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 5%;
+            text-align: left;
+        }
+
+        .hero h2 { font-size: 3rem; margin: 0; line-height: 1.1; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 20px 0; }
+
+        /* Grid Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 40px 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* News Section */
+        .news-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--england-red);
+            border-radius: 4px;
+        }
+
+        .news-card h3 { margin-top: 0; color: var(--england-blue); }
+        .date { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+
+        /* Sidebar info */
+        .sidebar-box {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-box h4 {
+            border-bottom: 2px solid var(--england-red);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .fixture {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--england-red);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="images/England-6-a-side.png" alt="England 6-a-side" style="height: 50px;">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="national-team.html">National Team</a></li>
+        <li><a href="trials.html">Apply for Trials</a></li>
+        <li><a href="https://www.instagram.com/official.england6aside/">Instagram</a></li>
+        
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="badge">NATIONAL TEAM UPDATE</div>
+    <h2>Road to the Socca World Cup 2026</h2>
+    <p>Follow the Three Lions as we prepare for the biggest tournament in small-sided football.</p>
+    <a href="https://www.instagram.com/official.england6aside/" class="cta-button">Follow on Instagram</a>
+</section>
+
+<div class="main-content">
+    
+    <main>
+        <div class="news-card">
+            <span class="date">March 1, 2026</span>
+            <h3>Squad Selection Announced for European Championship</h3>
+            <p>The road to Albania starts here. Management is officially opening the selection process for the 2026 EuroCup squad. Register your interest now for upcoming trial dates and take your chance to wear the shirt in Tirana....</p>
+            <a href="#" style="color: var(--england-red); font-weight: bold;">Read More →</a>
+        </div>
+
+        <div class="news-card">
+            <span class="date">February 24, 2026</span>
+            <h3>Trials Results: 2 New Prospects Added to Development Pool</h3>
+            <p>Our scouts were on the ground at several clubs last weekend as part of the ongoing mission to unearth the best 6-a-side talent in England. After observing over 30 players in high-intensity match scenarios, two individuals have been scouted for the senior national program. This move marks the first phase of our squad-building strategy for the upcoming European campaign.</p>
+        </div>
+    </main>
+
+    <aside>
+        <div class="sidebar-box">
+            <h4>Upcoming Fixtures</h4>
+            <div class="fixture">
+                <span><strong>England</strong> vs Wales</span>
+                <span>March 29</span>
+            </div>
+            <div class="fixture">
+                <span><strong>England</strong> vs Ireland</span>
+                <span>April 19</span>
+            </div>
+            <div class="fixture">
+                <span><strong>England</strong> vs TBC</span>
+                <span>May 02</span>
+            </div>
+        </div>
+
+        <div class="sidebar-box" style="background: var(--england-blue); color: white;">
+            <h4>Official Partnerships</h4>
+            <p style="font-size: 0.85rem; opacity: 0.8;">Proudly supported by the International Socca Federation and Leisure Leagues.</p>
+        </div>
+    </aside>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>England 6-a-side | National Team Trials</title>
+    <style>
+        :root {
+            --england-red: #ce1124;
+            --england-blue: #002043;
+            --light-grey: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--white);
+            margin: 0;
+            color: var(--england-blue);
+        }
+
+        /* Navigation Bar */
+nav {
+    background: var(--england-blue);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo { 
+    color: white; 
+    font-weight: 800; 
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li { margin-left: 2rem; }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover { color: var(--england-red); }
+
+        header {
+            background-color: var(--england-blue);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--england-red);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        p.subtitle { color: #666; margin-bottom: 2rem; text-align: center; }
+
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: bold; font-size: 0.9rem; }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Important for mobile */
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            background-color: var(--england-red);
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-submit:hover { background-color: #a00d1c; }
+
+        .badge-section { text-align: center; margin-top: 20px; opacity: 0.6; font-size: 0.8rem; }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="images/England-6-a-side.png" alt="England 6-a-side" style="height: 50px;">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="national-team.html">National Team</a></li>
+        <li><a href="trials.html">Apply for Trials</a></li>
+        <li><a href="https://www.instagram.com/official.england6aside/">Instagram</a></li>
+        
+    </ul>
+</nav>
+
+<header>
+    <h1>England 6-a-side</h1>
+    <p>Official National Team Trials 2026</p>
+</header>
+
+<div class="container">
+    <p class="subtitle">Think you have what it takes to wear the Three Lions? Fill out the scouting form below.</p>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Harry Kane" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="position">Primary Position</label>
+            <select id="position" name="position">
+                <option value="gk">Goalkeeper</option>
+                <option value="def">Defender</option>
+                <option value="mid">Midfielder / Playmaker</option>
+                <option value="fwd">Forward / Target Man</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Current Club / League Experience</label>
+            <textarea id="experience" name="experience" rows="3" placeholder="List any semi-pro or high-level 6-a-side leagues you play in..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Preferred Trial Location</label>
+            <select id="location" name="location">
+                <option value="london">London </option>
+                <option value="midlands">Birmingham </option>
+                <option value="north">Manchester </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Application</button>
+    </form>
+
+    <div class="badge-section">
+        <p>Affiliated with International Socca Federation (ISF)</p>
+    </div>
+</div>
+
+</body>
+</html>
